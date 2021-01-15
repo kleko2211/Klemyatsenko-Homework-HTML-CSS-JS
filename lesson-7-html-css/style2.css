@@ -1,0 +1,32 @@
+* {
+    font-size: 30px;
+}
+
+li {
+    list-style: disc;
+}
+
+[href*="yandex.by"] {
+    color: #f70;
+}
+
+[href*="google.com"] {
+    color: #666;
+}
+
+[href~="_blank"] {
+    color: #f70;
+}
+
+a {
+    text-decoration-skip-ink: none;
+}
+
+#blank::after { /*Можно было, не используя id (ul li:nth-child(5)*/
+    content: "\21f1";
+    color: #f70;
+    margin: 10px;
+    display: inline-block;
+    transform: rotate(90deg);
+    line-height: 5px;
+}
