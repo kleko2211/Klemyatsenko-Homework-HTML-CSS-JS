@@ -55,6 +55,6 @@ input[type='radio']:checked::after {
     visibility: visible;
 }
 
-input[type='submit'],[type='reset'] {
-    box-shadow: 0 0 2px rgba(0,0,0,1);
+input[type='submit'], [type='reset'] {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 1);
 }
