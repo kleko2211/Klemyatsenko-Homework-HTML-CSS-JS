@@ -1,0 +1,93 @@
+* {
+    /*text-align: left; Положение текста "выровнять по левому краю*/
+    font-weight: normal; /*Толщина шрифта - нормальная*/
+    line-height: 17px; /*Расстояние между строками*/
+    /*color: black;*/ /*Если подключить это правило - отключаются правила раскраски для нумерованных списков при помощи псевдоэлементов (строки 37, 41, 49, 53) important! не работает*/
+    /*background: white;*/ /*Если подключить это правило, то в darktheme для Mozilla вид страницы будет как в примере, но без подключенной строки 5 это не имеет смысла, т.к. darktheme делает инверсию чб цветов и шрифт тонет в бэкграунде*/
+}
+
+h1 {
+    text-align: right; /*Выравнивание текста - по правому краю*/
+    color: orange; /*Цвет текста*/
+    font-weight: bold; /*Толщина шрифта*/
+}
+
+p:first-letter { /*Псевдо-элемент, задающий стиль первой букве*/
+    font-size: xx-large;
+    color: red;
+}
+
+p em {
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h2:first-of-type { /*Псевдо-класс, выбирающий первый в своём роде элемент данного типа*/
+    color: orange;
+}
+
+span {
+    font-weight: bold;
+}
+
+div.container ul:nth-child(5) li:nth-child(1) ol:nth-child(2) {
+    color: grey;
+}
+
+div.container ul:nth-child(5) li:nth-child(2) ol:nth-child(2) {
+    color: red;
+}
+
+div h2 { /*Дочерний селектор. Можно использовать .container h2:nth-child(6) */
+    color: #6208c4;
+}
+
+div.container ul:nth-child(7) li:nth-child(1) ol:nth-child(2) {
+    color: darkgreen;
+}
+
+div.container ul:nth-child(7) li:nth-child(2) ol:nth-child(2) {
+    color: red;
+}
+
+table {
+    border: 1pt solid;
+    border-collapse: separate;
+    width: 300pt;
+    text-align: center;
+    border-color: dimgray black black dimgrey;
+}
+
+table td {
+    font-weight: bold;
+    border: 1pt solid;
+    background: white;
+    border-color: black dimgray dimgrey black;
+}
+
+table tr:nth-child(3) td:nth-child(n+2):nth-child(-n+4) {
+    background: darkgreen;
+    color: white;
+    text-align: center;
+}
+
+table tr:nth-child(4) td:nth-child(n+2):nth-child(-n+4) {
+    background: darkgreen;
+    color: white;
+    text-align: center;
+}
+
+table tr:nth-child(5) td:nth-child(n+2):nth-child(-n+4) {
+    background: darkgreen;
+    color: white;
+    text-align: center;
+}
+
+table tr:nth-child(n+3):nth-child(-n+6) td:first-child {
+    color: orange;
+    text-align: left;
+}
