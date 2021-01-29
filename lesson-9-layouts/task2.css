@@ -1,0 +1,64 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9px;
+    margin: 20px 10px;
+}
+
+nav {
+    width: 450px;
+    background-color: #FAFAFA;
+    margin: 0 34%;
+    position: center;
+    min-width: 250px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    padding: 1px;
+    display: inline;
+}
+
+.menu li a {
+    padding: 5px 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 40px;
+    color: #B464CF;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+}
+
+nav > ul.menu > li:first-child a, li:last-child a,
+li:nth-child(2) a, li:nth-child(11) a {
+    border: 1px solid #FAFAFA;
+}
+
+/*Не знаю, какой вариант лучше (в html или в css)*/
+/*nav > ul.menu > li:first-child a:before, li:nth-child(2) a:before{*/
+/*    content: "\00ab";*/
+/*}*/
+
+/*nav > ul.menu > li:last-child a:after, li:nth-child(11) a:after{*/
+/*    content: "\00bb";*/
+/*}*/
+
+ul.menu > li > span {
+    padding: 7px;
+    font-size: 9px;
+    color: #A464D1;
+    vertical-align: text-bottom;
+}
+
+li a:hover {
+    background-color: #BD75DF;
+    color: white;
+    border-color: #BD75DF;
+}
+
+
