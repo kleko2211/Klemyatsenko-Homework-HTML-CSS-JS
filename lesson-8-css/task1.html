@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="task1.css">
+  <title>Task1</title>
+</head>
+<body>
+  <h2>Sign up to the app</h2>
+  <form action="#">
+    <fieldset>
+      <legend>Personal information:</legend>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="Mickey" required><br>
+      <br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Mouse" required><br>
+      <br>
+      <label for="selfpres">Self-presentation:</label><br>
+      <textarea id="selfpres" name="selfpres" rows="13" cols="30" required>The cat was playing in the garden.</textarea><br>
+    </fieldset>
+    <fieldset>
+      <legend>Car info (the brand):</legend>
+      <label for="cars"></label>
+      <select id="cars" name="cars">
+        <option value="volvo" selected>Volvo</option>
+        <option value="audi">Audi</option>
+        <option value="vw">Volkswagen</option>
+        <option value="kia">Kia</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Choose one:</legend>
+      <input type="radio" id="male" name="gender" value="male" checked>
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br>
+    </fieldset>
+    <fieldset>
+      <legend>Choose many:</legend>
+      <input type="checkbox" id="bike" name="bike" value="bike">
+      <label for="bike">I have a bike</label><br>
+      <input type="checkbox" id="car" name="car" value="car">
+      <label for="car">I have a car</label><br>
+    </fieldset>
+    <div>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Cancel">
+    </div>
+  </form>
+</body>
+</html>
