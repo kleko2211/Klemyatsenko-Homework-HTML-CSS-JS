@@ -1,0 +1,129 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.pricing-table-head {
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 269px;
+    border: 4px solid #EE812E;
+    background-color: #EE812E;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 2px #CBE2EF;
+}
+
+.pricing-table-head p, .pricing-table-cont p {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pricing-table-head > p {
+    margin: 18px 0;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.pricing-table-cont {
+    background-color: #FFFFFF;
+}
+
+.pricing-table-cont p {
+    padding-top: 15px;
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.pricing-table-cont p + p {
+    padding-top: 1px;
+    margin: 5px 0 0 0;
+    font-size: 70px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pricing-table-cont span#sup {
+    vertical-align: 35px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.pricing-table-cont span#sub {
+    text-transform: capitalize;
+    vertical-align: -8px;
+    font-size: 17px;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+
+ul.pricing-table-list {
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+ul.pricing-table-list li {
+    display: inline-block;
+    width: 183px;
+    margin-bottom: 1px;
+    height: 19px;
+    padding: 5px 0 6px 56px;
+    list-style-type: none;
+    background-color: #EEF3FE;
+    list-style-position: inside;
+    text-decoration: none;
+    color: #888993;
+    font-size: 15px;
+}
+
+ul.pricing-table-list li:before {
+    position: absolute;
+    content: url("https://drive.google.com/drive/folders/16mfyVxv5M3swyq2VB2SUWNptrs1pKock");
+    transform: translateX(-25px);
+}
+
+ul.pricing-table-list li:nth-child(-n+2) {
+    text-transform: uppercase;
+}
+
+ul.pricing-table-list li:nth-child(even) {
+    background-color: #F5F4F6;
+}
+
+.pricing-table-button {
+    margin: 5px 5px 0;
+}
+
+.pricing-table-button button {
+    display: inline-block;
+    width: 230px;
+    height: 33px;
+    margin: 0 20px 30px 10px;
+    background-color: #EA8300;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 60px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 0 #B3571E;
+    outline: none;
+}
+
+.pricing-table-button > button:hover {
+    opacity: 80%;
+}
+
+.pricing-table-button button:active {
+    opacity: 100%;
+    box-shadow: 0 2px 0 0 #8c5218;
+    background-color: #EA8300;
+    transform: translateY(2px);
+}
