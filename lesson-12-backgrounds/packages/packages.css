@@ -1,1 +1,79 @@
-/* Write your code here */
+body {
+    background-image: url("../images/plans-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    color: black;
+    width: 100%;
+}
+
+.pricing-table {
+    box-sizing: border-box;
+    margin-top: 50px;
+    height: 100%;
+    position: relative;
+}
+
+.plus-plan, .free-plan, .premium-plan {
+    width: 1000px;
+    margin: 10px auto;
+    background: rgba(128, 128, 128, .9);
+    box-sizing: border-box;
+    color: black;
+    padding: 25px 20px;
+    border: 4px solid #8C6D6A;
+    position: relative;
+}
+
+.plus-plan, .premium-plan {
+    float: left;
+    border-left: none;
+}
+
+.free-plan {
+    float: right;
+    border-right: none;
+    text-align: right;
+}
+
+.premium-plan {
+    background: rgba(109, 79, 74, .9);
+    color: white;
+}
+
+.premium-plan > .pricing-card-content {
+    opacity: 0.6;
+}
+
+.premium-plan > .pricing-card-annotation {
+    color: black;
+}
+
+.pricing-card-content {
+    font-weight: 600;
+}
+
+p.pricing-card-annotation {
+    box-sizing: border-box;
+    padding: 10px;
+    background: white;
+    border: 1px solid black;
+}
+
+.cta-btn { /*Тут я не совсем поняла должна ли это быть кнопка, или ссылка, или это просто <p>*/
+    float: right;
+    text-decoration: none;
+    background: #D54033;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 5px;
+}
+
+/*так и не разобралась почему при подключении футера он уехал вверх*/
+footer {
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 100%;
+}
