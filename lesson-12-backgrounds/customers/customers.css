@@ -1,1 +1,70 @@
-/* Write your code here */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.customer-1, .customer-2 {
+    width: 100%;
+    height: 700px;
+    box-sizing: border-box;
+    margin: 40px auto;
+    position: relative;
+}
+
+.customer-1-photo, .customer-2-photo {
+    max-width: 65%;
+    margin: 20px 0;
+}
+
+.customer-1-photo {
+    float: left;
+    box-shadow: 14px 17px 17px 0 rgba(199, 199, 199, 1);
+}
+
+.customer-2-photo {
+    float: right;
+    box-shadow: -18px 18px 17px 0 rgba(199, 199, 199, 1);
+}
+
+/*я не придумала как еще можно отцентрировать по вертикали несколько блоков, при том, чтобы при изменении масштаба масштабировалась и картинка*/
+.customer-1-content, .customer-2-content {
+    max-width: 35%;
+    box-sizing: border-box;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.customer-1-content {
+    padding: 0 50px 0 20px;
+    float: left;
+    text-align: right;
+}
+
+.customer-2-content {
+    padding: 0 20px 0 50px;
+    float: right;
+    text-align: left;
+}
+
+.name, .description, .comment {
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    font-size: 40px;
+    color: #C44B4B;
+}
+
+.description {
+    font-weight: 600;
+    color: #B5BFBA;
+    font-size: 16px;
+}
+
+.comment {
+    color: black;
+    font-size: 18px;
+}
