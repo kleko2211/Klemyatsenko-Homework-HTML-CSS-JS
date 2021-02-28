@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task1</title>
+</head>
+<body>
+  <script>
+      var firstName = prompt('Ваше имя?', 'Иван');
+      var lastName = prompt('Ваша фамилия?', 'Иванов');
+      var secondName = prompt('Ваше отчество?', 'Иванович');
+
+      var fullName = lastName + ' ' + firstName + ' ' + secondName;
+
+      var age = parseInt(prompt('Ваш возраст?', '18'));
+      var leapYears = parseInt(age / 4);
+      var normalYears = (age - leapYears);
+      var ageInDays = ((normalYears * 365) + (leapYears * 366));
+
+      var afterFifeYears = (age + 5);
+
+      var sex = confirm('Ваш пол - мужской?');
+      if (sex !== true) {
+          sex = 'женский'
+      } else
+          sex = 'мужской';
+
+      var pension = (age>=60)?'да':'нет';
+
+      alert('Ваше ФИО: ' + fullName + '\n'
+          + 'Ваш возраст в годах: ' + age + '\n'
+          + 'Ваш возраст в днях: ' + ageInDays + '\n'
+          + 'Через 5 лет вам будет: ' + afterFifeYears + '\n'
+          + 'Ваш пол: ' + sex + '\n'
+          + 'Вы на пенсии? : ' + pension);
+
+  </script>
+
+</body>
+</html>
